@@ -4,7 +4,7 @@ import operator
 
 ops = {
 	'+': operator.add,
-	'-': operator.subtract,
+	'-': operator.sub,
 }
 def calculate(myarg):
 	stack = list()
@@ -17,9 +17,8 @@ def calculate(myarg):
 			function = ops[token]
 			result = function(arg1,arg2)
 			stack.append(result)
-	print(stack)
+
 	return stack.pop()
-		
 
 def main():
 	while True:
