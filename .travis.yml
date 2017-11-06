@@ -2,3 +2,4 @@ language: python
 python:
 - "3.0"
 script: make test
+sudo: enabled
